@@ -1,0 +1,81 @@
+# Current time Wed Jan 04 11:48:46 2017
+# ModelSim Stack Trace
+# Program = vsim
+# Id = "10.2c"
+# Version = "2013.07"
+# Date = "Jul 18 2013"
+# Platform = win32pe
+# 0    0x00a9a4db: '<unknown (@0xa9a4db)>'
+# 1    0x006af454: '<unknown (@0x6af454)>'
+# 2    0x006b2a3c: '<unknown (@0x6b2a3c)>'
+# 3    0x0098f801: '<unknown (@0x98f801)>'
+# 4    0x1000cb1f: 'TclInvokeStringCommand + 0x8f' in 'c:\modeltech_pe_10.2c\win32pe\tcl85.dll'
+# 5    0x100473b5: 'Tcl_ExprObj + 0x1605' in 'c:\modeltech_pe_10.2c\win32pe\tcl85.dll'
+# 6    0x100462b5: 'Tcl_ExprObj + 0x505' in 'c:\modeltech_pe_10.2c\win32pe\tcl85.dll'
+# 7    0x1000f6a9: 'TclEvalObjEx + 0x2f9' in 'c:\modeltech_pe_10.2c\win32pe\tcl85.dll'
+# End of Stack Trace
+
+
+# Current time Mon May 22 16:43:47 2017
+# ModelSim Stack Trace
+# Program = vsim
+# Id = "10.2c"
+# Version = "2013.07"
+# Date = "Jul 18 2013"
+# Platform = win32pe
+# 0    0x00a9a4d4: '<unknown (@0xa9a4d4)>'
+# 1    0x006af454: '<unknown (@0x6af454)>'
+# 2    0x006b2a3c: '<unknown (@0x6b2a3c)>'
+# 3    0x0098f801: '<unknown (@0x98f801)>'
+# 4    0x1000cb1f: 'TclInvokeStringCommand + 0x8f' in 'c:\modeltech_pe_10.2c\win32pe\tcl85.dll'
+# 5    0x100473b5: 'Tcl_ExprObj + 0x1605' in 'c:\modeltech_pe_10.2c\win32pe\tcl85.dll'
+# 6    0x100462b5: 'Tcl_ExprObj + 0x505' in 'c:\modeltech_pe_10.2c\win32pe\tcl85.dll'
+# 7    0x1000f6a9: 'TclEvalObjEx + 0x2f9' in 'c:\modeltech_pe_10.2c\win32pe\tcl85.dll'
+# End of Stack Trace
+
+
+# Current time Tue Sep 25 11:57:48 2018
+# ModelSim Stack Trace
+# Program = vsim
+# Id = "10.2c"
+# Version = "2013.07"
+# Date = "Jul 18 2013"
+# Platform = win32pe
+# 0    0x00517962: '<unknown (@0x517962)>'
+# End of Stack Trace
+
+
+# Current time Tue Oct 02 19:05:24 2018
+# ModelSim Stack Trace
+# Program = vsim
+# Id = "10.2c"
+# Version = "2013.07"
+# Date = "Jul 18 2013"
+# Platform = win32pe
+# 0    0x00a1e9d1: '<unknown (@0xa1e9d1)>'
+# 1    0x0098f801: '<unknown (@0x98f801)>'
+# 2    0x1000cb1f: 'TclInvokeStringCommand + 0x8f' in 'c:\modeltech_pe_10.2c\win32pe\tcl85.dll'
+# 3    0x100473b5: 'Tcl_ExprObj + 0x1605' in 'c:\modeltech_pe_10.2c\win32pe\tcl85.dll'
+# 4    0x100462b5: 'Tcl_ExprObj + 0x505' in 'c:\modeltech_pe_10.2c\win32pe\tcl85.dll'
+# 5    0x1000f6a9: 'TclEvalObjEx + 0x2f9' in 'c:\modeltech_pe_10.2c\win32pe\tcl85.dll'
+# End of Stack Trace
+
+
+# Current time Mon Oct 29 11:01:19 2018
+# ModelSim Stack Trace
+# Program = vsim
+# Id = "10.2c"
+# Version = "2013.07"
+# Date = "Jul 18 2013"
+# Platform = win32pe
+# 0    0x00a9a4db: '<unknown (@0xa9a4db)>'
+# 1    0x006af454: '<unknown (@0x6af454)>'
+# 2    0x006b2a3c: '<unknown (@0x6b2a3c)>'
+# 3    0x0098f801: '<unknown (@0x98f801)>'
+# 4    0x1000cb1f: 'TclInvokeStringCommand + 0x8f' in 'c:\modeltech_pe_10.2c\win32pe\tcl85.dll'
+# 5    0x100473b5: 'Tcl_ExprObj + 0x1605' in 'c:\modeltech_pe_10.2c\win32pe\tcl85.dll'
+# 6    0x100462b5: 'Tcl_ExprObj + 0x505' in 'c:\modeltech_pe_10.2c\win32pe\tcl85.dll'
+# 7    0x1000f6a9: 'TclEvalObjEx + 0x2f9' in 'c:\modeltech_pe_10.2c\win32pe\tcl85.dll'
+# End of Stack Trace
+
+

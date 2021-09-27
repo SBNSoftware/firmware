@@ -1,0 +1,9 @@
+C:\Experiments\mu2e\Readout_Controller\Controller_FPGA2\Controller_FPGA2.ngc 1541102215
+ipcore_dir/SMI_FIFO.ngc 1458163647
+ipcore_dir/PhyTxBuff.ngc 1518630856
+ipcore_dir/LinkTxFIFO.ngc 1537891381
+ipcore_dir/SCFifo_512x16.ngc 1529616635
+ipcore_dir/SCFIFO_1Kx28.ngc 1537286301
+ipcore_dir/PhyRxBuff.ngc 1504646898
+ipcore_dir/SCFIFO1Kx16.ngc 1518632003
+OK

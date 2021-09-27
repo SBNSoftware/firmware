@@ -1,0 +1,15 @@
+Storage Target: Generic Parallel PROM
+8M   [8388608]
+FF
+Untitled
+C:\Experiments\mu2e\Readout_Controller\Controller_FPGA2\
+
+BIN (Swap Bits ON)
+UP
+1
+0
+No
+
+1
+0
+No

@@ -1,0 +1,113 @@
+#:C39    
+#Xilinx FPGA Editor Command Log File
+#Editor Version:
+#:V   NT M2.1 P.20131013
+#Current Working Directory:
+#:D   C:\Experiments\mu2e\Readout_Controller\Controller_FPGA2
+#Date/Time:
+#:T   Tue Apr 17 11:20:26 2018
+#------------------------------
+	#Reading Controller_FPGA2.ncd...
+	#Loading device for application Rf_Device from file '6slx25.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
+	#   "Controller_FPGA2" is an NCD, version 3.2, device xc6slx25, package fgg484, speed -3
+	#Design creation date: 2018.04.17.16.16.30
+	#Building chip graphics...
+	#Loading speed info...
+	#1
+setattr main edit-mode no-logic-changes
+	#2
+unselect -all
+	#3
+unselect -all
+	#4
+unselect -all
+	#5
+unselect -all
+	#6
+select site 'BUFIO2_X0Y22'
+	#site "BUFIO2_X0Y22",  type = BUFIO2  (RPM grid X0Y175)
+	#7
+unselect -all
+	#8
+unselect -all
+	#9
+select arc 'GENERIC(-89262,-1422)--->INPUT(-85217,187)'
+	#arc "GENERIC(-89262,-1422)--->INPUT(-85217,187)"
+	#10
+unselect -all
+	#11
+select arc 'GENERIC(-89262,-1422)--->INPUT(-85217,187)'
+	#arc "GENERIC(-89262,-1422)--->INPUT(-85217,187)"
+	#12
+unselect -all
+	#13
+select comp 'SDD<4>'
+	#comp "SDD<4>",  site "J3",  bonded type = IOB,  pad name = PAD231,  pin name = J3  (RPM grid X1Y154)
+	#14
+unselect -all
+	#15
+select pin 'V3.DIFFO_OUT'
+	#site.pin = V3.DIFFO_OUT
+	#16
+unselect -all
+	#17
+select pin 'U4.DIFFO_IN'
+	#site.pin = U4.DIFFO_IN
+	#18
+unselect -all
+	#19
+select arc 'PADOUTPUT(-89008,-102872)--->PADINPUT(-89008,-102592)'
+	#arc "PADOUTPUT(-89008,-102872)--->PADINPUT(-89008,-102592)"
+	#20
+unselect -all
+	#21
+select pin 'V3.O'
+	#site.pin = V3.O
+	#22
+unselect -all
+	#23
+select pin 'V3.T'
+	#site.pin = V3.T
+	#24
+unselect -all
+	#25
+select pin 'V3.I'
+	#site.pin = V3.I
+	#26
+unselect -all
+	#27
+select site 'V3'
+	#site "V3",  bonded type = IOBS,  pad name = PAD210,  pin name = V3  (RPM grid X1Y32)
+	#28
+post attr
+	#29
+unpost site "V3"
+	#30
+unselect -all
+	#31
+select comp 'uCWr'
+	#comp "uCWr",  site "T5",  bonded type = IOB,  pad name = PAD202,  pin name = T5  (RPM grid X5Y0)
+	#32
+unselect -all
+	#33
+unselect -all
+	#34
+select site 'T6'
+	#site "T6",  bonded type = IOBM,  pad name = PAD201,  pin name = T6  (RPM grid X5Y2)
+	#35
+unselect -all
+	#36
+select comp 'uCWr'
+	#comp "uCWr",  site "T5",  bonded type = IOB,  pad name = PAD202,  pin name = T5  (RPM grid X5Y0)
+	#37
+unselect -all
+	#38
+select comp 'uCWr'
+	#comp "uCWr",  site "T5",  bonded type = IOB,  pad name = PAD202,  pin name = T5  (RPM grid X5Y0)
+	#39
+unselect -all
+	#40
+select comp 'uCWr'
+	#comp "uCWr",  site "T5",  bonded type = IOB,  pad name = PAD202,  pin name = T5  (RPM grid X5Y0)
+	#41
+post block

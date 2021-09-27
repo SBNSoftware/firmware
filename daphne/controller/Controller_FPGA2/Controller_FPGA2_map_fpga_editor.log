@@ -1,0 +1,38 @@
+#:C9     
+#Xilinx FPGA Editor Command Log File
+#Editor Version:
+#:V   NT M2.1 P.20131013
+#Current Working Directory:
+#:D   C:\Experiments\mu2e\Readout_Controller\Controller_FPGA2
+#Date/Time:
+#:T   Tue Mar 06 17:08:46 2018
+#------------------------------
+	#Reading Controller_FPGA2_map.ncd...
+	#Loading device for application Rf_Device from file '6slx25.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
+	#   "Controller_FPGA2" is an NCD, version 3.2, device xc6slx25, package fgg484, speed -3
+	#Design creation date: 2018.03.06.23.03.47
+	#Building chip graphics...
+	#Loading speed info...
+	#1
+setattr main edit-mode no-logic-changes
+	#2
+unselect -all
+	#3
+setattr main disable_draw on
+	#4
+setattr layer pinwires view on
+	#5
+setattr main disable_draw off
+	#Hint: change the visibility of more than one layer at a time by clicking on the apply button, clicking two or more layer buttons, and then clicking on the apply button again.
+	#6
+unselect -all
+	#7
+unselect -all
+	#8
+select net 'FMRxBuff_Count<7><0>'
+	#net "FMRxBuff_Count<7><0>"
+	#9
+unselect -all
+	#10
+select net 'PhyRxBuff_Out<1><7>'
+	#net "PhyRxBuff_Out<1><7>"

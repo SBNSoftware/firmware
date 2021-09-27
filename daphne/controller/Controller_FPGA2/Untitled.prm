@@ -1,0 +1,17 @@
+PROMGEN: Xilinx Prom Generator P.20131013
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+promgen -w -p bin -c FF -o C:\Experiments\mu2e\Readout_Controller\Controller_FPGA2\//Untitled -s 8192 -u 0 C:/Experiments/mu2e/Readout_Controller/Controller_FPGA1/controllerfpga_1.bit 
+
+PROM C:\Experiments\mu2e\Readout_Controller\Controller_FPGA2\Untitled.prm map: Fri Mar 25 16:34:50 2016
+
+Calculating PROM checksum with fill value ff
+
+Format        Bin
+Size          8192K
+PROM start    00000000
+PROM end      007fffff
+PROM checksum 001e10b9
+
+        Addr1        Addr2                     Date File(s)
+     00000000     000c3df5     Mar 25 16:33:30 2016 C:/Experiments/mu2e/Readout_Controller/Controller_FPGA1/controllerfpga_1.bit

@@ -1,0 +1,1246 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Mapping Report File for Design 'Controller_FPGA2'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol
+high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off
+-pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd
+Controller_FPGA2.pcf 
+Target Device  : xc6slx25
+Target Package : fgg484
+Target Speed   : -3
+Mapper Version : spartan6 -- $Revision: 1.55 $
+Mapped Date    : Thu Nov 01 14:57:09 2018
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    2
+Slice Logic Utilization:
+  Number of Slice Registers:                 5,330 out of  30,064   17%
+    Number used as Flip Flops:               5,330
+    Number used as Latches:                      0
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:                0
+  Number of Slice LUTs:                      5,253 out of  15,032   34%
+    Number used as logic:                    4,853 out of  15,032   32%
+      Number using O6 output only:           3,033
+      Number using O5 output only:             379
+      Number using O5 and O6:                1,441
+      Number used as ROM:                        0
+    Number used as Memory:                       0 out of   3,664    0%
+    Number used exclusively as route-thrus:    400
+      Number with same-slice register load:    375
+      Number with same-slice carry load:        25
+      Number with other load:                    0
+
+Slice Logic Distribution:
+  Number of occupied Slices:                 2,136 out of   3,758   56%
+  Number of MUXCYs used:                     1,916 out of   7,516   25%
+  Number of LUT Flip Flop pairs used:        6,581
+    Number with an unused Flip Flop:         2,133 out of   6,581   32%
+    Number with an unused LUT:               1,328 out of   6,581   20%
+    Number of fully used LUT-FF pairs:       3,120 out of   6,581   47%
+    Number of unique control sets:             369
+    Number of slice register sites lost
+      to control set restrictions:           1,270 out of  30,064    4%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                       228 out of     266   85%
+    Number of LOCed IOBs:                      221 out of     228   96%
+    IOB Flip Flops:                              1
+    IOB Master Pads:                             4
+    IOB Slave Pads:                              4
+
+Specific Feature Utilization:
+  Number of RAMB16BWERs:                        45 out of      52   86%
+  Number of RAMB8BWERs:                          2 out of     104    1%
+  Number of BUFIO2/BUFIO2_2CLKs:                 2 out of      32    6%
+    Number used as BUFIO2s:                      2
+    Number used as BUFIO2_2CLKs:                 0
+  Number of BUFIO2FB/BUFIO2FB_2CLKs:             0 out of      32    0%
+  Number of BUFG/BUFGMUXs:                       5 out of      16   31%
+    Number used as BUFGs:                        4
+    Number used as BUFGMUX:                      1
+  Number of DCM/DCM_CLKGENs:                     0 out of       4    0%
+  Number of ILOGIC2/ISERDES2s:                   0 out of     272    0%
+  Number of IODELAY2/IODRP2/IODRP2_MCBs:        23 out of     272    8%
+    Number used as IODELAY2s:                    0
+    Number used as IODRP2s:                      1
+    Number used as IODRP2_MCBs:                 22
+  Number of OLOGIC2/OSERDES2s:                  53 out of     272   19%
+    Number used as OLOGIC2s:                     1
+    Number used as OSERDES2s:                   52
+  Number of BSCANs:                              0 out of       4    0%
+  Number of BUFHs:                               0 out of     160    0%
+  Number of BUFPLLs:                             1 out of       8   12%
+  Number of BUFPLL_MCBs:                         1 out of       4   25%
+  Number of DSP48A1s:                            0 out of      38    0%
+  Number of ICAPs:                               0 out of       1    0%
+  Number of MCBs:                                1 out of       2   50%
+  Number of PCILOGICSEs:                         0 out of       2    0%
+  Number of PLL_ADVs:                            2 out of       2  100%
+  Number of PMVs:                                0 out of       1    0%
+  Number of STARTUPs:                            0 out of       1    0%
+  Number of SUSPEND_SYNCs:                       0 out of       1    0%
+
+Average Fanout of Non-Clock Nets:                4.09
+
+Peak Memory Usage:  574 MB
+Total REAL time to MAP completion:  2 mins 37 secs 
+Total CPU time to MAP completion:   2 mins 33 secs 
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:Place:838 - An IO Bus with more than one IO standard is found.
+   Components associated with this bus are as follows: 
+   	 Comp: Debug<1>   IOSTANDARD = LVCMOS25
+   	 Comp: Debug<2>   IOSTANDARD = LVCMOS18
+   	 Comp: Debug<3>   IOSTANDARD = LVCMOS18
+   	 Comp: Debug<4>   IOSTANDARD = LVCMOS25
+   	 Comp: Debug<5>   IOSTANDARD = LVCMOS18
+   	 Comp: Debug<6>   IOSTANDARD = LVCMOS18
+   	 Comp: Debug<7>   IOSTANDARD = LVCMOS18
+   	 Comp: Debug<8>   IOSTANDARD = LVCMOS25
+   	 Comp: Debug<9>   IOSTANDARD = LVCMOS18
+   	 Comp: Debug<10>   IOSTANDARD = LVCMOS18
+
+
+WARNING:PhysDesignRules:2410 - This design is using one or more 9K Block RAMs
+   (RAMB8BWER).  9K Block RAM initialization data, both user defined and
+   default, may be incorrect and should not be used.  For more information,
+   please reference Xilinx Answer Record 39999.
+
+Section 3 - Informational
+-------------------------
+INFO:LIT:243 - Logical network TxClk<1>_IBUF has no load.
+INFO:LIT:395 - The above info message is repeated 28 more times for the
+   following (max. 5 shown):
+   TxClk<0>_IBUF,
+   SPIMISO_IBUF,
+   SMI_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+   was.wsts/ram_full_i,
+   SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr
+   /gwdc1.wdcext/wr_data_count_i<10>,
+   SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr
+   /gwdc1.wdcext/wr_data_count_i<9>
+   To see the details of these info messages, please use the -detail switch.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:MapLib:841 - Changing COMPENSATION attribute from SYSTEM_SYNCHRONOUS to
+   INTERNAL for PLL_ADV SysPLL/pll_base_inst/PLL_ADV.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+INFO:Pack:1716 - Initializing temperature to 85.000 Celsius. (default - Range:
+   0.000 to 85.000 Celsius)
+INFO:Pack:1720 - Initializing voltage to 1.140 Volts. (default - Range: 1.140 to
+   1.260 Volts)
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+INFO:Pack:1650 - Map created a placed design.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+  96 block(s) removed
+  67 block(s) optimized away
+ 108 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+The signal
+"SMI_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwa
+s.wsts/ram_full_i" is sourceless and has been removed.
+The signal
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/wr_data_count_i<10>" is sourceless and has been removed.
+The signal
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/wr_data_count_i<9>" is sourceless and has been removed.
+The signal
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/wr_data_count_i<8>" is sourceless and has been removed.
+The signal
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/wr_data_count_i<7>" is sourceless and has been removed.
+The signal
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/wr_data_count_i<6>" is sourceless and has been removed.
+The signal
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/wr_data_count_i<5>" is sourceless and has been removed.
+The signal
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/wr_data_count_i<4>" is sourceless and has been removed.
+The signal
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/wr_data_count_i<3>" is sourceless and has been removed.
+The signal
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/wr_data_count_i<2>" is sourceless and has been removed.
+The signal
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/wr_data_count_i<1>" is sourceless and has been removed.
+The signal
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+was.wsts/ram_full_i" is sourceless and has been removed.
+The signal
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/Msub_diff_wr_rd_tmp_cy<8>" is sourceless and has been removed.
+ Sourceless block
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/Msub_diff_wr_rd_tmp_xor<9>" (XOR) removed.
+  The signal
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/Madd_diff_wr_rd[10]_GND_198_o_add_4_OUT_lut<9>" is sourceless and
+has been removed.
+   Sourceless block
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/Madd_diff_wr_rd[10]_GND_198_o_add_4_OUT_xor<9>11" (ROM) removed.
+    The signal
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/diff_wr_rd[10]_GND_198_o_add_4_OUT<9>" is sourceless and has been
+removed.
+     Sourceless block
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/wr_data_count_i_9" (FF) removed.
+   Sourceless block
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/Madd_diff_wr_rd[10]_GND_198_o_add_4_OUT_cy<9>11" (ROM) removed.
+    The signal
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/Madd_diff_wr_rd[10]_GND_198_o_add_4_OUT_cy<9>" is sourceless and has
+been removed.
+     Sourceless block
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/wr_data_count_i_10" (FF) removed.
+The signal
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/Msub_diff_wr_rd_tmp_lut<9>" is sourceless and has been removed.
+The signal
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/Msub_diff_wr_rd_tmp_cy<7>" is sourceless and has been removed.
+ Sourceless block
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/Msub_diff_wr_rd_tmp_xor<8>" (XOR) removed.
+  The signal
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/Madd_diff_wr_rd[10]_GND_198_o_add_4_OUT_lut<8>" is sourceless and
+has been removed.
+   Sourceless block
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/Madd_diff_wr_rd[10]_GND_198_o_add_4_OUT_xor<8>11" (ROM) removed.
+    The signal
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/diff_wr_rd[10]_GND_198_o_add_4_OUT<8>" is sourceless and has been
+removed.
+     Sourceless block
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/wr_data_count_i_8" (FF) removed.
+ Sourceless block
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/Msub_diff_wr_rd_tmp_cy<8>" (MUX) removed.
+The signal
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/Msub_diff_wr_rd_tmp_lut<8>" is sourceless and has been removed.
+The signal
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/Msub_diff_wr_rd_tmp_cy<6>" is sourceless and has been removed.
+ Sourceless block
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/Msub_diff_wr_rd_tmp_xor<7>" (XOR) removed.
+  The signal
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/Madd_diff_wr_rd[10]_GND_198_o_add_4_OUT_lut<7>" is sourceless and
+has been removed.
+   Sourceless block
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/Madd_diff_wr_rd[10]_GND_198_o_add_4_OUT_xor<7>11" (ROM) removed.
+    The signal
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/diff_wr_rd[10]_GND_198_o_add_4_OUT<7>" is sourceless and has been
+removed.
+     Sourceless block
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/wr_data_count_i_7" (FF) removed.
+ Sourceless block
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/Msub_diff_wr_rd_tmp_cy<7>" (MUX) removed.
+The signal
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/Msub_diff_wr_rd_tmp_lut<7>" is sourceless and has been removed.
+The signal
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/Msub_diff_wr_rd_tmp_cy<5>" is sourceless and has been removed.
+ Sourceless block
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/Msub_diff_wr_rd_tmp_xor<6>" (XOR) removed.
+  The signal
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/Madd_diff_wr_rd[10]_GND_198_o_add_4_OUT_lut<6>" is sourceless and
+has been removed.
+   Sourceless block
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/Madd_diff_wr_rd[10]_GND_198_o_add_4_OUT_xor<6>11" (ROM) removed.
+    The signal
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/diff_wr_rd[10]_GND_198_o_add_4_OUT<6>" is sourceless and has been
+removed.
+     Sourceless block
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/wr_data_count_i_6" (FF) removed.
+ Sourceless block
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/Msub_diff_wr_rd_tmp_cy<6>" (MUX) removed.
+The signal
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/Msub_diff_wr_rd_tmp_lut<6>" is sourceless and has been removed.
+The signal
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/Msub_diff_wr_rd_tmp_cy<4>" is sourceless and has been removed.
+ Sourceless block
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/Msub_diff_wr_rd_tmp_xor<5>" (XOR) removed.
+  The signal
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/Madd_diff_wr_rd[10]_GND_198_o_add_4_OUT_lut<5>" is sourceless and
+has been removed.
+   Sourceless block
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/Madd_diff_wr_rd[10]_GND_198_o_add_4_OUT_xor<5>11" (ROM) removed.
+    The signal
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/diff_wr_rd[10]_GND_198_o_add_4_OUT<5>" is sourceless and has been
+removed.
+     Sourceless block
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/wr_data_count_i_5" (FF) removed.
+ Sourceless block
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/Msub_diff_wr_rd_tmp_cy<5>" (MUX) removed.
+The signal
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/Msub_diff_wr_rd_tmp_lut<5>" is sourceless and has been removed.
+The signal
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/Msub_diff_wr_rd_tmp_cy<3>" is sourceless and has been removed.
+ Sourceless block
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/Msub_diff_wr_rd_tmp_xor<4>" (XOR) removed.
+  The signal
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/Madd_diff_wr_rd[10]_GND_198_o_add_4_OUT_lut<4>" is sourceless and
+has been removed.
+   Sourceless block
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/Madd_diff_wr_rd[10]_GND_198_o_add_4_OUT_xor<4>11" (ROM) removed.
+    The signal
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/diff_wr_rd[10]_GND_198_o_add_4_OUT<4>" is sourceless and has been
+removed.
+     Sourceless block
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/wr_data_count_i_4" (FF) removed.
+   Sourceless block
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/Madd_diff_wr_rd[10]_GND_198_o_add_4_OUT_xor<7>111_SW0" (ROM)
+removed.
+    The signal "SPITx_Buff/N16" is sourceless and has been removed.
+ Sourceless block
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/Msub_diff_wr_rd_tmp_cy<4>" (MUX) removed.
+The signal
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/Msub_diff_wr_rd_tmp_lut<4>" is sourceless and has been removed.
+The signal
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/Msub_diff_wr_rd_tmp_cy<2>" is sourceless and has been removed.
+ Sourceless block
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/Msub_diff_wr_rd_tmp_xor<3>" (XOR) removed.
+  The signal
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/Madd_diff_wr_rd[10]_GND_198_o_add_4_OUT_lut<3>" is sourceless and
+has been removed.
+   Sourceless block
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/Madd_diff_wr_rd[10]_GND_198_o_add_4_OUT_xor<3>11" (ROM) removed.
+    The signal
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/diff_wr_rd[10]_GND_198_o_add_4_OUT<3>" is sourceless and has been
+removed.
+     Sourceless block
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/wr_data_count_i_3" (FF) removed.
+   Sourceless block
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/Madd_diff_wr_rd[10]_GND_198_o_add_4_OUT_xor<7>111_SW2" (ROM)
+removed.
+    The signal "SPITx_Buff/N20" is sourceless and has been removed.
+ Sourceless block
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/Msub_diff_wr_rd_tmp_cy<3>" (MUX) removed.
+The signal
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/Msub_diff_wr_rd_tmp_lut<3>" is sourceless and has been removed.
+The signal
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/Msub_diff_wr_rd_tmp_cy<1>" is sourceless and has been removed.
+ Sourceless block
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/Msub_diff_wr_rd_tmp_xor<2>" (XOR) removed.
+  The signal
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/Madd_diff_wr_rd[10]_GND_198_o_add_4_OUT_lut<2>" is sourceless and
+has been removed.
+   Sourceless block
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/Madd_diff_wr_rd[10]_GND_198_o_add_4_OUT_xor<2>11" (ROM) removed.
+    The signal
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/diff_wr_rd[10]_GND_198_o_add_4_OUT<2>" is sourceless and has been
+removed.
+     Sourceless block
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/wr_data_count_i_2" (FF) removed.
+   Sourceless block
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/Madd_diff_wr_rd[10]_GND_198_o_add_4_OUT_xor<7>111_SW3" (ROM)
+removed.
+    The signal "SPITx_Buff/N22" is sourceless and has been removed.
+ Sourceless block
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/Msub_diff_wr_rd_tmp_cy<2>" (MUX) removed.
+The signal
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/Msub_diff_wr_rd_tmp_lut<2>" is sourceless and has been removed.
+The signal
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/Msub_diff_wr_rd_tmp_cy<0>" is sourceless and has been removed.
+ Sourceless block
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/Msub_diff_wr_rd_tmp_xor<1>" (XOR) removed.
+  The signal
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/Madd_diff_wr_rd[10]_GND_198_o_add_4_OUT_cy<1>" is sourceless and has
+been removed.
+   Sourceless block
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/Madd_diff_wr_rd[10]_GND_198_o_add_4_OUT_xor<1>11_INV_0" (BUF)
+removed.
+    The signal
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/diff_wr_rd[10]_GND_198_o_add_4_OUT<1>" is sourceless and has been
+removed.
+     Sourceless block
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/wr_data_count_i_1" (FF) removed.
+ Sourceless block
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/Msub_diff_wr_rd_tmp_cy<1>" (MUX) removed.
+The signal
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/Msub_diff_wr_rd_tmp_lut<1>" is sourceless and has been removed.
+The signal
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/Msub_diff_wr_rd_tmp_lut<0>" is sourceless and has been removed.
+ Sourceless block
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/Msub_diff_wr_rd_tmp_cy<0>" (MUX) removed.
+The signal
+"PhyTx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+was.wsts/ram_full_i" is sourceless and has been removed.
+The signal
+"LinkBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwa
+s.wsts/ram_full_i" is sourceless and has been removed.
+The signal
+"LinkBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/R
+D_PNTR[0]_RD_PNTR[1]_XOR_64_o" is sourceless and has been removed.
+ Sourceless block
+"LinkBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/r
+d_pntr_gc_0" (FF) removed.
+  The signal
+"LinkBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/g
+sync_stage[1].wr_stg_inst/D<0>" is sourceless and has been removed.
+   Sourceless block
+"LinkBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/g
+sync_stage[1].wr_stg_inst/Q_reg_0" (FF) removed.
+    The signal
+"LinkBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/g
+sync_stage[2].wr_stg_inst/D<0>" is sourceless and has been removed.
+     Sourceless block
+"LinkBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/g
+sync_stage[2].wr_stg_inst/Q_reg_0" (FF) removed.
+      The signal
+"LinkBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/g
+sync_stage[2].wr_stg_inst/Q_reg<0>" is sourceless and has been removed.
+The signal
+"DatReqBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout
+_i<15>" is sourceless and has been removed.
+ Sourceless block
+"DatReqBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout
+_i_15_dpot" (ROM) removed.
+  The signal
+"DatReqBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout
+_i_15_dpot" is sourceless and has been removed.
+   Sourceless block
+"DatReqBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout
+_i_15" (SFF) removed.
+The signal
+"DatReqBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout
+_i<14>" is sourceless and has been removed.
+ Sourceless block
+"DatReqBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout
+_i_14_dpot" (ROM) removed.
+  The signal
+"DatReqBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout
+_i_14_dpot" is sourceless and has been removed.
+   Sourceless block
+"DatReqBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout
+_i_14" (SFF) removed.
+The signal
+"DatReqBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout
+_i<13>" is sourceless and has been removed.
+ Sourceless block
+"DatReqBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout
+_i_13_dpot" (ROM) removed.
+  The signal
+"DatReqBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout
+_i_13_dpot" is sourceless and has been removed.
+   Sourceless block
+"DatReqBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout
+_i_13" (SFF) removed.
+The signal
+"DatReqBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout
+_i<12>" is sourceless and has been removed.
+ Sourceless block
+"DatReqBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout
+_i_12_dpot" (ROM) removed.
+  The signal
+"DatReqBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout
+_i_12_dpot" is sourceless and has been removed.
+   Sourceless block
+"DatReqBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout
+_i_12" (SFF) removed.
+The signal
+"DatReqBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout
+_i<11>" is sourceless and has been removed.
+ Sourceless block
+"DatReqBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout
+_i_11_dpot" (ROM) removed.
+  The signal
+"DatReqBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout
+_i_11_dpot" is sourceless and has been removed.
+   Sourceless block
+"DatReqBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout
+_i_11" (SFF) removed.
+The signal
+"DatReqBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout
+_i<10>" is sourceless and has been removed.
+ Sourceless block
+"DatReqBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout
+_i_10_dpot" (ROM) removed.
+  The signal
+"DatReqBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout
+_i_10_dpot" is sourceless and has been removed.
+   Sourceless block
+"DatReqBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout
+_i_10" (SFF) removed.
+The signal
+"DatReqBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout
+_i<9>" is sourceless and has been removed.
+ Sourceless block
+"DatReqBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout
+_i_9_dpot" (ROM) removed.
+  The signal
+"DatReqBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout
+_i_9_dpot" is sourceless and has been removed.
+   Sourceless block
+"DatReqBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout
+_i_9" (SFF) removed.
+The signal
+"DatReqBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout
+_i<8>" is sourceless and has been removed.
+ Sourceless block
+"DatReqBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout
+_i_8_dpot" (ROM) removed.
+  The signal
+"DatReqBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout
+_i_8_dpot" is sourceless and has been removed.
+   Sourceless block
+"DatReqBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout
+_i_8" (SFF) removed.
+The signal
+"DatReqBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout
+_i<3>" is sourceless and has been removed.
+ Sourceless block
+"DatReqBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout
+_i_3_dpot" (ROM) removed.
+  The signal
+"DatReqBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout
+_i_3_dpot" is sourceless and has been removed.
+   Sourceless block
+"DatReqBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout
+_i_3" (SFF) removed.
+The signal
+"DatReqBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout
+_i<2>" is sourceless and has been removed.
+ Sourceless block
+"DatReqBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout
+_i_2_dpot" (ROM) removed.
+  The signal
+"DatReqBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout
+_i_2_dpot" is sourceless and has been removed.
+   Sourceless block
+"DatReqBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout
+_i_2" (SFF) removed.
+The signal
+"DatReqBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout
+_i<1>" is sourceless and has been removed.
+ Sourceless block
+"DatReqBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout
+_i_1_dpot" (ROM) removed.
+  The signal
+"DatReqBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout
+_i_1_dpot" is sourceless and has been removed.
+   Sourceless block
+"DatReqBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout
+_i_1" (SFF) removed.
+The signal
+"DatReqBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout
+_i<0>" is sourceless and has been removed.
+ Sourceless block
+"DatReqBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout
+_i_0_dpot" (ROM) removed.
+  The signal
+"DatReqBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout
+_i_0_dpot" is sourceless and has been removed.
+   Sourceless block
+"DatReqBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout
+_i_0" (SFF) removed.
+The signal
+"DatReqBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wss.wsts/ram_full_i" is sourceless and has been removed.
+The signal
+"DatReqBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/g
+r1.rfwft/empty_fwft_i" is sourceless and has been removed.
+The signal
+"DatReqBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.
+gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/doutb_i<15>" is sourceless
+and has been removed.
+The signal
+"DatReqBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.
+gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/doutb_i<14>" is sourceless
+and has been removed.
+The signal
+"DatReqBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.
+gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/doutb_i<13>" is sourceless
+and has been removed.
+The signal
+"DatReqBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.
+gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/doutb_i<12>" is sourceless
+and has been removed.
+The signal
+"DatReqBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.
+gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/doutb_i<11>" is sourceless
+and has been removed.
+The signal
+"DatReqBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.
+gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/doutb_i<10>" is sourceless
+and has been removed.
+The signal
+"DatReqBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.
+gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/doutb_i<9>" is sourceless and
+has been removed.
+The signal
+"DatReqBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.
+gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/doutb_i<8>" is sourceless and
+has been removed.
+The signal
+"DatReqBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.
+gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/doutb_i<3>" is sourceless and
+has been removed.
+The signal
+"DatReqBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.
+gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/doutb_i<2>" is sourceless and
+has been removed.
+The signal
+"DatReqBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.
+gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/doutb_i<1>" is sourceless and
+has been removed.
+The signal
+"DatReqBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.
+gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/doutb_i<0>" is sourceless and
+has been removed.
+The signal
+"DatReqBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/g
+r1.rfwft/going_empty_fwft_leaving_empty_fwft_OR_8_o" is sourceless and has been
+removed.
+ Sourceless block
+"DatReqBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/g
+r1.rfwft/empty_fwft_i" (FF) removed.
+ Sourceless block
+"DatReqBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/g
+r1.rfwft/empty_fwft_fb" (FF) removed.
+  The signal
+"DatReqBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/g
+r1.rfwft/empty_fwft_fb" is sourceless and has been removed.
+   Sourceless block
+"DatReqBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/g
+r1.rfwft/going_empty_fwft_leaving_empty_fwft_OR_8_o1" (ROM) removed.
+The signal
+"AddrBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gws
+s.wsts/ram_full_i" is sourceless and has been removed.
+The signal
+"Gen_RxBuffs[7].FEBRx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_syn
+c_fifo.gl0.wr/gwas.wsts/ram_full_i" is sourceless and has been removed.
+The signal
+"Gen_RxBuffs[6].FEBRx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_syn
+c_fifo.gl0.wr/gwas.wsts/ram_full_i" is sourceless and has been removed.
+The signal
+"Gen_RxBuffs[5].FEBRx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_syn
+c_fifo.gl0.wr/gwas.wsts/ram_full_i" is sourceless and has been removed.
+The signal
+"Gen_RxBuffs[4].FEBRx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_syn
+c_fifo.gl0.wr/gwas.wsts/ram_full_i" is sourceless and has been removed.
+The signal
+"Gen_RxBuffs[3].FEBRx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_syn
+c_fifo.gl0.wr/gwas.wsts/ram_full_i" is sourceless and has been removed.
+The signal
+"Gen_RxBuffs[2].FEBRx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_syn
+c_fifo.gl0.wr/gwas.wsts/ram_full_i" is sourceless and has been removed.
+The signal
+"Gen_RxBuffs[1].FEBRx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_syn
+c_fifo.gl0.wr/gwas.wsts/ram_full_i" is sourceless and has been removed.
+The signal
+"Gen_RxBuffs[0].FEBRx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_syn
+c_fifo.gl0.wr/gwas.wsts/ram_full_i" is sourceless and has been removed.
+Unused block
+"AddrBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gws
+s.wsts/ram_full_i" (FF) removed.
+Unused block
+"DatReqBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wss.wsts/ram_full_i" (FF) removed.
+Unused block
+"Gen_RxBuffs[0].FEBRx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_syn
+c_fifo.gl0.wr/gwas.wsts/ram_full_i" (FF) removed.
+Unused block
+"Gen_RxBuffs[1].FEBRx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_syn
+c_fifo.gl0.wr/gwas.wsts/ram_full_i" (FF) removed.
+Unused block
+"Gen_RxBuffs[2].FEBRx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_syn
+c_fifo.gl0.wr/gwas.wsts/ram_full_i" (FF) removed.
+Unused block
+"Gen_RxBuffs[3].FEBRx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_syn
+c_fifo.gl0.wr/gwas.wsts/ram_full_i" (FF) removed.
+Unused block
+"Gen_RxBuffs[4].FEBRx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_syn
+c_fifo.gl0.wr/gwas.wsts/ram_full_i" (FF) removed.
+Unused block
+"Gen_RxBuffs[5].FEBRx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_syn
+c_fifo.gl0.wr/gwas.wsts/ram_full_i" (FF) removed.
+Unused block
+"Gen_RxBuffs[6].FEBRx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_syn
+c_fifo.gl0.wr/gwas.wsts/ram_full_i" (FF) removed.
+Unused block
+"Gen_RxBuffs[7].FEBRx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_syn
+c_fifo.gl0.wr/gwas.wsts/ram_full_i" (FF) removed.
+Unused block
+"LinkBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/M
+xor_RD_PNTR[0]_RD_PNTR[1]_XOR_64_o_xo<0>1" (ROM) removed.
+Unused block
+"LinkBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwa
+s.wsts/ram_full_i" (FF) removed.
+Unused block
+"PhyTx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+was.wsts/ram_full_i" (FF) removed.
+Unused block
+"SMI_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwa
+s.wsts/ram_full_i" (FF) removed.
+Unused block
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+was.wsts/ram_full_i" (FF) removed.
+Unused block
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/Msub_diff_wr_rd_tmp_lut<0>" (ROM) removed.
+Unused block
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/Msub_diff_wr_rd_tmp_lut<1>" (ROM) removed.
+Unused block
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/Msub_diff_wr_rd_tmp_lut<2>" (ROM) removed.
+Unused block
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/Msub_diff_wr_rd_tmp_lut<3>" (ROM) removed.
+Unused block
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/Msub_diff_wr_rd_tmp_lut<4>" (ROM) removed.
+Unused block
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/Msub_diff_wr_rd_tmp_lut<5>" (ROM) removed.
+Unused block
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/Msub_diff_wr_rd_tmp_lut<6>" (ROM) removed.
+Unused block
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/Msub_diff_wr_rd_tmp_lut<7>" (ROM) removed.
+Unused block
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/Msub_diff_wr_rd_tmp_lut<8>" (ROM) removed.
+Unused block
+"SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wdc1.wdcext/Msub_diff_wr_rd_tmp_lut<9>" (ROM) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND
+		AddrBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.g
+bmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/XST_GND
+GND 		AddrBuff/XST_GND
+VCC 		AddrBuff/XST_VCC
+GND
+		DatReqBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm
+.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/XST_GND
+GND 		DatReqBuff/XST_GND
+VCC 		DatReqBuff/XST_VCC
+GND
+		Gen_RxBuffs[0].FEBRx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sy
+nc_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/XS
+T_GND
+GND 		Gen_RxBuffs[0].FEBRx_Buff/XST_GND
+VCC 		Gen_RxBuffs[0].FEBRx_Buff/XST_VCC
+GND
+		Gen_RxBuffs[0].FMRx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_syn
+c_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/XST
+_GND
+GND 		Gen_RxBuffs[0].FMRx_Buff/XST_GND
+VCC 		Gen_RxBuffs[0].FMRx_Buff/XST_VCC
+GND
+		Gen_RxBuffs[1].FEBRx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sy
+nc_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/XS
+T_GND
+GND 		Gen_RxBuffs[1].FEBRx_Buff/XST_GND
+VCC 		Gen_RxBuffs[1].FEBRx_Buff/XST_VCC
+GND
+		Gen_RxBuffs[1].FMRx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_syn
+c_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/XST
+_GND
+GND 		Gen_RxBuffs[1].FMRx_Buff/XST_GND
+VCC 		Gen_RxBuffs[1].FMRx_Buff/XST_VCC
+GND
+		Gen_RxBuffs[2].FEBRx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sy
+nc_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/XS
+T_GND
+GND 		Gen_RxBuffs[2].FEBRx_Buff/XST_GND
+VCC 		Gen_RxBuffs[2].FEBRx_Buff/XST_VCC
+GND
+		Gen_RxBuffs[2].FMRx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_syn
+c_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/XST
+_GND
+GND 		Gen_RxBuffs[2].FMRx_Buff/XST_GND
+VCC 		Gen_RxBuffs[2].FMRx_Buff/XST_VCC
+GND
+		Gen_RxBuffs[3].FEBRx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sy
+nc_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/XS
+T_GND
+GND 		Gen_RxBuffs[3].FEBRx_Buff/XST_GND
+VCC 		Gen_RxBuffs[3].FEBRx_Buff/XST_VCC
+GND
+		Gen_RxBuffs[3].FMRx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_syn
+c_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/XST
+_GND
+GND 		Gen_RxBuffs[3].FMRx_Buff/XST_GND
+VCC 		Gen_RxBuffs[3].FMRx_Buff/XST_VCC
+GND
+		Gen_RxBuffs[4].FEBRx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sy
+nc_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/XS
+T_GND
+GND 		Gen_RxBuffs[4].FEBRx_Buff/XST_GND
+VCC 		Gen_RxBuffs[4].FEBRx_Buff/XST_VCC
+GND
+		Gen_RxBuffs[4].FMRx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_syn
+c_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/XST
+_GND
+GND 		Gen_RxBuffs[4].FMRx_Buff/XST_GND
+VCC 		Gen_RxBuffs[4].FMRx_Buff/XST_VCC
+GND
+		Gen_RxBuffs[5].FEBRx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sy
+nc_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/XS
+T_GND
+GND 		Gen_RxBuffs[5].FEBRx_Buff/XST_GND
+VCC 		Gen_RxBuffs[5].FEBRx_Buff/XST_VCC
+GND
+		Gen_RxBuffs[5].FMRx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_syn
+c_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/XST
+_GND
+GND 		Gen_RxBuffs[5].FMRx_Buff/XST_GND
+VCC 		Gen_RxBuffs[5].FMRx_Buff/XST_VCC
+GND
+		Gen_RxBuffs[6].FEBRx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sy
+nc_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/XS
+T_GND
+GND 		Gen_RxBuffs[6].FEBRx_Buff/XST_GND
+VCC 		Gen_RxBuffs[6].FEBRx_Buff/XST_VCC
+GND
+		Gen_RxBuffs[6].FMRx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_syn
+c_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/XST
+_GND
+GND 		Gen_RxBuffs[6].FMRx_Buff/XST_GND
+VCC 		Gen_RxBuffs[6].FMRx_Buff/XST_VCC
+GND
+		Gen_RxBuffs[7].FEBRx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sy
+nc_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/XS
+T_GND
+GND 		Gen_RxBuffs[7].FEBRx_Buff/XST_GND
+VCC 		Gen_RxBuffs[7].FEBRx_Buff/XST_VCC
+GND
+		Gen_RxBuffs[7].FMRx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_syn
+c_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/XST
+_GND
+GND 		Gen_RxBuffs[7].FMRx_Buff/XST_GND
+VCC 		Gen_RxBuffs[7].FMRx_Buff/XST_VCC
+GND
+		LinkBuff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.g
+bmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/XST_GND
+GND 		LinkBuff/XST_GND
+VCC 		LinkBuff/XST_VCC
+GND
+		PhyTx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm
+.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/XST_GND
+GND 		PhyTx_Buff/XST_GND
+VCC 		PhyTx_Buff/XST_VCC
+GND
+		SMI_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.g
+bmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/XST_GND
+GND 		SMI_Buff/XST_GND
+GND
+		SPITx_Buff/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm
+.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/XST_GND
+GND 		SPITx_Buff/XST_GND
+VCC 		SPITx_Buff/XST_VCC
+GND 		XST_GND
+VCC 		XST_VCC
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| BA<0>                              | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW | OSERDES      |          |          |
+| BA<1>                              | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW | OSERDES      |          |          |
+| CAS                                | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW | OSERDES      |          |          |
+| CRS<0>                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| CRS<1>                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| CRS<2>                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| CRS<3>                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| CRS<4>                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| CRS<5>                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| CRS<6>                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| CRS<7>                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| Clk25MHz                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| Clk50MHz                           | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| ClkB_N                             | IOB              | INPUT     | LVDS_25              | FALSE |          |      |              |          |          |
+| ClkB_P                             | IOB              | INPUT     | LVDS_25              | FALSE |          |      |              |          |          |
+| CpldCS                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| CpldRst                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              | PULLUP   |          |
+| DReqFM                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| Debug<1>                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| Debug<2>                           | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| Debug<3>                           | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| Debug<4>                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| Debug<5>                           | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| Debug<6>                           | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| Debug<7>                           | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| Debug<8>                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| Debug<9>                           | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| Debug<10>                          | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| FMRx<0>                            | IOB              | INPUT     | LVCMOS18             |       |          |      |              |          |          |
+| FMRx<1>                            | IOB              | INPUT     | LVCMOS18             |       |          |      |              |          |          |
+| FMRx<2>                            | IOB              | INPUT     | LVCMOS18             |       |          |      |              |          |          |
+| FMRx<3>                            | IOB              | INPUT     | LVCMOS18             |       |          |      |              |          |          |
+| FMRx<4>                            | IOB              | INPUT     | LVCMOS18             |       |          |      |              |          |          |
+| FMRx<5>                            | IOB              | INPUT     | LVCMOS18             |       |          |      |              |          |          |
+| FMRx<6>                            | IOB              | INPUT     | LVCMOS18             |       |          |      |              |          |          |
+| FMRx<7>                            | IOB              | INPUT     | LVCMOS18             |       |          |      |              |          |          |
+| FMRxEn                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| GA<0>                              | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| GA<1>                              | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| HrtBtFM                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| LDM                                | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| LDQS                               | IOB              | BIDIR     | LVCMOS18             |       | 12       | SLOW |              | PULLDOWN |          |
+| LinkClk_N                          | IOBS             | OUTPUT    | LVDS_25              |       |          |      |              |          |          |
+| LinkClk_P                          | IOBM             | OUTPUT    | LVDS_25              |       |          |      | OSERDES      |          |          |
+| LinkD_N<0>                         | IOBS             | OUTPUT    | LVDS_25              |       |          |      |              |          |          |
+| LinkD_N<1>                         | IOBS             | OUTPUT    | LVDS_25              |       |          |      |              |          |          |
+| LinkD_P<0>                         | IOBM             | OUTPUT    | LVDS_25              |       |          |      | OSERDES      |          |          |
+| LinkD_P<1>                         | IOBM             | OUTPUT    | LVDS_25              |       |          |      | OSERDES      |          |          |
+| LinkFR_N                           | IOBS             | OUTPUT    | LVDS_25              |       |          |      |              |          |          |
+| LinkFR_P                           | IOBM             | OUTPUT    | LVDS_25              |       |          |      | OSERDES      |          |          |
+| MDC<0>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| MDC<1>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| MDIO<0>                            | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| MDIO<1>                            | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| PhyPDn                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| PhyRst                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| RAS                                | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW | OSERDES      |          |          |
+| RxClk<0>                           | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| RxClk<1>                           | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| RxClk<2>                           | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| RxClk<3>                           | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| RxClk<4>                           | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| RxClk<5>                           | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| RxClk<6>                           | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| RxClk<7>                           | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| RxDA<0>                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| RxDA<1>                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| RxDA<2>                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| RxDA<3>                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| RxDB<0>                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| RxDB<1>                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| RxDB<2>                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| RxDB<3>                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| RxDC<0>                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| RxDC<1>                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| RxDC<2>                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| RxDC<3>                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| RxDD<0>                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| RxDD<1>                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| RxDD<2>                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| RxDD<3>                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| RxDE<0>                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| RxDE<1>                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| RxDE<2>                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| RxDE<3>                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| RxDF<0>                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| RxDF<1>                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| RxDF<2>                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| RxDF<3>                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| RxDG<0>                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| RxDG<1>                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| RxDG<2>                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| RxDG<3>                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| RxDH<0>                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| RxDH<1>                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| RxDH<2>                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| RxDH<3>                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| RxDV<0>                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| RxDV<1>                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| RxDV<2>                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| RxDV<3>                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| RxDV<4>                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| RxDV<5>                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| RxDV<6>                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| RxDV<7>                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| RxErr<0>                           | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| RxErr<1>                           | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| RxErr<2>                           | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| RxErr<3>                           | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| RxErr<4>                           | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| RxErr<5>                           | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| RxErr<6>                           | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| RxErr<7>                           | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| SDA<0>                             | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW | OSERDES      |          |          |
+| SDA<1>                             | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW | OSERDES      |          |          |
+| SDA<2>                             | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW | OSERDES      |          |          |
+| SDA<3>                             | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW | OSERDES      |          |          |
+| SDA<4>                             | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW | OSERDES      |          |          |
+| SDA<5>                             | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW | OSERDES      |          |          |
+| SDA<6>                             | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW | OSERDES      |          |          |
+| SDA<7>                             | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW | OSERDES      |          |          |
+| SDA<8>                             | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW | OSERDES      |          |          |
+| SDA<9>                             | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW | OSERDES      |          |          |
+| SDA<10>                            | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW | OSERDES      |          |          |
+| SDA<11>                            | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW | OSERDES      |          |          |
+| SDA<12>                            | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW | OSERDES      |          |          |
+| SDA<13>                            | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW | OSERDES      |          |          |
+| SDCKE                              | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW | OSERDES      |          |          |
+| SDClk_N                            | IOB              | OUTPUT    | DIFF_MOBILE_DDR      |       |          |      | OSERDES      |          |          |
+| SDClk_P                            | IOB              | OUTPUT    | DIFF_MOBILE_DDR      |       |          |      | OSERDES      |          |          |
+| SDD<0>                             | IOB              | BIDIR     | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| SDD<1>                             | IOB              | BIDIR     | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| SDD<2>                             | IOB              | BIDIR     | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| SDD<3>                             | IOB              | BIDIR     | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| SDD<4>                             | IOB              | BIDIR     | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| SDD<5>                             | IOB              | BIDIR     | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| SDD<6>                             | IOB              | BIDIR     | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| SDD<7>                             | IOB              | BIDIR     | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| SDD<8>                             | IOB              | BIDIR     | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| SDD<9>                             | IOB              | BIDIR     | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| SDD<10>                            | IOB              | BIDIR     | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| SDD<11>                            | IOB              | BIDIR     | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| SDD<12>                            | IOB              | BIDIR     | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| SDD<13>                            | IOB              | BIDIR     | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| SDD<14>                            | IOB              | BIDIR     | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| SDD<15>                            | IOB              | BIDIR     | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| SDRzq                              | IOB              | BIDIR     | LVCMOS18             |       | 12       | SLOW |              |          | DEFAULT  |
+| SDWE                               | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW | OSERDES      |          |          |
+| SPICS                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| SPIMISO                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| SPIMOSI                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| SPISClk                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| TxClk<0>                           | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| TxClk<1>                           | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| TxDA<0>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| TxDA<1>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| TxDA<2>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| TxDA<3>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| TxDB<0>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| TxDB<1>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| TxDB<2>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| TxDB<3>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| TxDC<0>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| TxDC<1>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| TxDC<2>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| TxDC<3>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| TxDD<0>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| TxDD<1>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| TxDD<2>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| TxDD<3>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| TxDE<0>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| TxDE<1>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| TxDE<2>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| TxDE<3>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| TxDF<0>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| TxDF<1>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| TxDF<2>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| TxDF<3>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| TxDG<0>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| TxDG<1>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| TxDG<2>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| TxDG<3>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| TxDH<0>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| TxDH<1>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| TxDH<2>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| TxDH<3>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| TxEn<0>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| TxEn<1>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| TxEn<2>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| TxEn<3>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| TxEn<4>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| TxEn<5>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| TxEn<6>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| TxEn<7>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| UDM                                | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| UDQS                               | IOB              | BIDIR     | LVCMOS18             |       | 12       | SLOW |              | PULLDOWN |          |
+| VXO_N                              | IOB              | INPUT     | LVDS_25              | TRUE  |          |      |              |          |          |
+| VXO_P                              | IOB              | INPUT     | LVDS_25              | TRUE  |          |      |              |          |          |
+| uCA<0>                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| uCA<1>                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| uCA<2>                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| uCA<3>                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| uCA<4>                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| uCA<5>                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| uCA<6>                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| uCA<7>                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| uCA<8>                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| uCA<9>                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| uCA<10>                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| uCA<11>                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| uCD<0>                             | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| uCD<1>                             | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| uCD<2>                             | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| uCD<3>                             | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| uCD<4>                             | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| uCD<5>                             | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| uCD<6>                             | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| uCD<7>                             | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| uCD<8>                             | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| uCD<9>                             | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| uCD<10>                            | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| uCD<11>                            | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| uCD<12>                            | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| uCD<13>                            | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| uCD<14>                            | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| uCD<15>                            | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| uCRd                               | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| uCWr                               | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+A logic-level (pre-route) timing report can be generated by using Xilinx static
+timing analysis tools, Timing Analyzer (GUI) or TRCE (command line), with the
+mapped NCD and PCF files. Please note that this timing report will be generated
+using estimated delay information. For accurate numbers, please generate a
+timing report with the post Place and Route NCD file.
+
+For more information about the Timing Analyzer, consult the Xilinx Timing
+Analyzer Reference Manual; for more information about TRCE, consult the Xilinx
+Command Line Tools User Guide "TRACE" chapter.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+Use the "-detail" map option to print out Control Set Information.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

@@ -1,0 +1,625 @@
+--------------------------------------------------------------------------------
+-- Company: 
+-- Engineer:
+--
+-- Create Date:   10:22:03 03/21/2016
+-- Design Name:   
+-- Module Name:   C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2_tb.vhd
+-- Project Name:  Controller_FPGA2
+-- Target Device:  
+-- Tool versions:  
+-- Description:   
+-- 
+-- VHDL Test Bench Created by ISE for module: Controller_FPGA2
+-- 
+-- Dependencies:
+-- 
+-- Revision:
+-- Revision 0.01 - File Created
+-- Additional Comments:
+--
+-- Notes: 
+-- This testbench has been automatically generated using types std_logic and
+-- std_logic_vector for the ports of the unit under test.  Xilinx recommends
+-- that these types always be used for the top-level I/O of a design in order
+-- to guarantee that the testbench will bind correctly to the post-implementation 
+-- simulation model.
+--------------------------------------------------------------------------------
+LIBRARY ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+use work.Global_Defs.all;
+
+entity FM_Tx is
+	generic (Pwidth : positive);
+		 port(clock,reset,Enable : in std_logic;
+				Data : in std_logic_vector(Pwidth - 1 downto 0);
+				Tx_Out : buffer TxOutRec);
+end FM_Tx;
+
+architecture behavioural of FM_Tx is
+
+-- Serializer state machine
+Type FMTx is (TxIdle,TxStrtA,TxStrtB,ShftTx,ParityTx);
+signal Tx_State : FMTx;
+
+-- Shift register, bit width counter
+signal TxShft : std_logic_vector (Pwidth-1 downto 0);
+signal TxBitWdth : std_logic_vector (2 downto 0);
+-- Transmitted FM data, running parity bit
+signal Parity,Tx_Req : std_logic;
+signal EnDL : std_logic_vector (1 downto 0);
+
+begin
+
+FM_Encode : process(clock, reset)
+-- Frame bit counter
+variable TxBtCnt : integer range 0 to Pwidth-1;
+
+begin
+ if reset = '1' then 
+
+	Tx_State <= TxIdle; Tx_Out.FM <= '0';
+	Tx_Out.Done <= '0'; Parity <= '0';
+	TxShft <= (others => '0'); Tx_Req <= '0';
+	TxBitWdth <= "000"; TxBtCnt := 0;
+	EnDL <= "00";
+
+elsif rising_edge(clock) then
+
+	EnDL(0) <= Enable;
+	EnDL(1) <= EnDL(0);
+
+	    if Tx_Req = '0' and Tx_State = TxIdle and EnDL = 1 then Tx_Req <= '1';
+	elsif  Tx_Req = '1' and Tx_State = TxStrtA then Tx_Req <= '0';
+	else Tx_Req <= Tx_Req;
+	end if;
+
+   Case TxBitWdth is
+	When "000" => TxBitWdth <= "001"; 
+	When "001" => if Tx_Req = '1' then TxBitWdth <= "000"; else TxBitWdth <= "010"; end if;
+	When "010" => TxBitWdth <= "011";
+	When "011" => if Tx_State = TxStrtA or Tx_State = TxStrtB
+			  then TxBitWdth <= "100";
+			  else TxBitWdth <= "000";
+			  end if;
+	When "100" => if Tx_State = TxStrtA or Tx_State = TxStrtB
+			  then TxBitWdth <= "101";
+			  else TxBitWdth <= "000";
+			  end if;
+	When others => TxBitWdth <= "000";
+  end Case;
+
+-- FMTx TxIdle,TxStrtA,TxStrtB,ShftTx,ParityTx
+Case Tx_State is
+-- Send data on start
+        When TxIdle => 
+	 	 if Tx_Req = '1' and (TxBitWdth = "001" or TxBitWdth = "011")
+		  then Tx_State <= TxStrtA;
+			else Tx_State <= TxIdle;
+			end if;
+		When TxStrtA =>
+		 if TxBitWdth = "101" then Tx_State <= TxStrtB;
+		  else Tx_State <= TxStrtA;
+		 end if;
+ 		When TxStrtB =>
+		 if TxBitWdth = "101" then Tx_State <= ShftTx;
+		  else Tx_State <= TxStrtB;
+		 end if;
+          When ShftTx =>
+         if TxBitWdth = "011" and TxBtCnt = 0 then Tx_State <= ParityTx;
+         else Tx_State <= ShftTx;
+         end if;
+           When ParityTx =>
+         if TxBitWdth = "011" then Tx_State <= TxIdle;
+         else Tx_State <= ParityTx;
+         end if;
+end case;
+
+-- Two transitions per bit period is a 1, one transition a 0
+ -- default state is a string of 1's
+if ((TxBitWdth = "001" or TxBitWdth = "011") and Tx_State = TxIdle)
+		  or TxBitWdth = "101" 	-- Start bit is defined 1 1/2 bit periods
+					-- Number of data FM transitions is ShiftOut register data dependent
+          or (Tx_State = ShftTx and ((TxShft(Pwidth-1) = '1' and TxBitWdth = "001") or TxBitWdth = "011"))
+					-- Number of parity FM transitions is parity bit dependent
+          or (Tx_State = ParityTx and ((Parity = '0' and TxBitWdth = "001") or TxBitWdth = "011"))
+then Tx_Out.FM <= not Tx_Out.FM;
+else Tx_Out.FM <= Tx_Out.FM;
+end if;
+
+-- data frames are "width" bits long 
+if Tx_State = TxStrtB and TxBitWdth = "101"
+  then TxBtCnt := (Pwidth-1);
+elsif Tx_State = TxIdle then TxBtCnt := 0;
+elsif Tx_State = ShftTx and TxBitWdth = "011" and TxBtCnt /= 0
+	then TxBtCnt := TxBtCnt-1;
+else TxBtCnt := TxBtCnt;
+end if;
+-- Load shift register with data byte at the beginning of the transmit sequence
+-- load condition
+if Tx_State = TxIdle and EnDL = 1
+  then TxShft <= Data;
+-- Shift one bit left (MSB first) during data portion of frame
+-- shift condition
+elsif Tx_State = ShftTx and TxBitWdth = "011" 
+	then TxShft <= (TxShft(Pwidth-2 downto 0) & '0');
+else TxShft <= TxShft;
+end if;
+
+  if (Parity = '1' and Tx_State = TxIdle) -- reset parity at start
+  or (Tx_State = ShftTx and TxBitWdth = "011" and TxShft(Pwidth-1) = '0')
+-- Toggle parity bit with each shifted out "0"
+then Parity <= not Parity;
+else Parity <= Parity;
+end if;
+
+-- Indicate when a frame has been shifted out
+if TxBitWdth = "011" and Tx_State = ParityTx then Tx_Out.Done <= '1';
+else Tx_Out.Done <= '0';
+end if;
+
+end if; -- reset
+
+end process FM_Encode;
+
+end behavioural; -- of Serial_Tx
+
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+use work.Global_Defs;
+
+
+-- Uncomment the following library declaration if using
+-- arithmetic functions with Signed or Unsigned values
+--USE ieee.numeric_std.ALL;
+ 
+ENTITY Controller_FPGA2_tb IS
+END Controller_FPGA2_tb;
+ 
+ARCHITECTURE behavior OF Controller_FPGA2_tb IS 
+ 
+    -- Component Declaration for the Unit Under Test (UUT)
+
+ COMPONENT Controller_FPGA2
+  PORT(
+-- 106 MHz VXO clock, Phy clocks
+	VXO_P,VXO_N,ClkB_P,ClkB_N,Clk50MHz,
+-- microcontroller strobes
+	CpldRst, CpldCS, uCRd, uCWr : in std_logic;
+-- microcontroller data, address buses
+	uCA : in std_logic_vector(11 downto 0);
+	uCD : inout std_logic_vector(15 downto 0);
+-- Geographic address pins
+	GA : in std_logic_vector(1 downto 0);
+-- SDRAM pins
+	SDCKE,LDM,UDM,RAS,CAS,SDWE : out std_logic;
+	SDClk_P,SDClk_N : out  std_logic;
+	SDD : inout std_logic_vector(15 downto 0);
+	UDQS,LDQS,SDRzq : inout std_logic;
+	SDA : out std_logic_vector(13 downto 0);
+	BA : out std_logic_vector(1 downto 0);
+-- Link serial transmitter signals
+	LinkClk_P,LinkClk_N,LinkFR_P,LinkFR_N : out  std_logic;
+	LinkD_P,LinkD_N : out std_logic_vector(1 downto 0);
+-- Ethernet PHY Signals
+	RxDA,RxDB,RxDC,RxDD,RxDE,RxDF,RxDG,RxDH : in std_logic_vector(3 downto 0);
+	RxClk,RxDV,RxErr,CRS : in std_logic_vector(7 downto 0);
+	TxDA,TxDB,TxDC,TxDD,TxDE,TxDF,TxDG,TxDH : out std_logic_vector(3 downto 0);
+	TxEn : out std_logic_vector(7 downto 0);
+	MDC : buffer std_logic_vector(1 downto 0);
+	MDIO : inout std_logic_vector(1 downto 0);
+	PhyPDn,PhyRst : out std_logic;
+-- Two of eight TxClk chips from the PHYs are connected to the FPGA
+	TxClk : in std_logic_vector(1 downto 0);
+	Clk25MHz : buffer std_logic;
+-- LVDS receivers
+	FMRx : in std_logic_vector(7 downto 0);
+-- Chip enable for octal LVDS receiver
+	FMRxEn : out std_logic;
+--- Microbunch counter, trigger request from top level FPGA
+	uBunchFM,TrgFM : in std_logic;
+-- LVDS driver SPI port 
+	SPICS,SPISClk,SPIMOSI : buffer std_logic;
+	SPIMISO : in std_logic;
+-- Debug port
+ 	Debug : out std_logic_vector(10 downto 1));
+  END COMPONENT;
+    
+--Inputs
+   signal VXO_P,VXO_N,ClkB_P,ClkB_N : std_logic := '0';
+   signal Clk50MHz : std_logic := '0';
+   signal CpldRst,CpldCS,uCRd,uCWr : std_logic := '1';
+   signal uCA : std_logic_vector(11 downto 0) := (others => '0');
+   signal GA : std_logic_vector(1 downto 0) := (others => '0');
+   signal RxDA,RxDB,RxDC,RxDD,RxDE,RxDF,RxDG,RxDH  : std_logic_vector(3 downto 0) := (others => '0');
+   signal RxClk,RxDV,RxErr,CRS : std_logic_vector(7 downto 0) := (others => '0');
+   signal TxClk : std_logic_vector(1 downto 0) := (others => '0');
+   signal FMRx : std_logic_vector(7 downto 0) := (others => '0');
+   signal uBunchFM,TrgFM : std_logic := '0';
+	signal SPICS,SPISClk,SPIMOSI : std_logic;
+	signal SPIMISO : std_logic;
+
+--BiDirs
+   signal uCD,SDD : std_logic_vector(15 downto 0);
+   signal UDQS,LDQS,SDRzq : std_logic;
+   signal MDIO : std_logic_vector(1 downto 0);
+
+--Outputs
+   signal SDCKE,LDM,UDM,RAS,CAS,SDWE : std_logic;
+   signal SDClk_P,SDClk_N : std_logic;
+   signal SDA : std_logic_vector(13 downto 0);
+   signal BA : std_logic_vector(1 downto 0);
+   signal LinkClk_P,LinkClk_N : std_logic;
+   signal LinkFR_P,LinkFR_N : std_logic;
+   signal LinkD_P,LinkD_N : std_logic_vector(1 downto 0);
+   signal TxDA,TxDB,TxDC,TxDD,TxDE,TxDF,TxDG,TxDH : std_logic_vector(3 downto 0);
+   signal TxEn,iRxClk,iRxDV,iCRS : std_logic_vector(7 downto 0);
+   signal MDC : std_logic_vector(1 downto 0);
+   signal PhyPDn,PhyRst,Clk25MHz,FMRxEn : std_logic;
+   signal Debug : std_logic_vector(10 downto 1);
+
+	signal MDIO_Shift_Out0,MDIO_Shift_Out1 : std_logic_vector(15 downto 0);
+	signal MDIO_Shift_In0,MDIO_Shift_In1 : std_logic_vector(3 downto 0);
+	signal MDIO_BitCount : std_logic_vector(4 downto 0);
+
+	Type MDIO_State_Type is (Idle,Ld_RdBitCount,Ld_WrtBitCount,Wait_Write,Shift,Done);
+	signal MDIO_State : MDIO_State_Type;
+
+	Type RxInArray is Array(0 to 7) of std_logic_vector(3 downto 0);
+	signal RxIns : RxInArray;
+
+	Type RxOutArray is Array(0 to 7) of std_logic_vector(15 downto 0);
+	signal RxOuts : RxOutArray;
+
+	Type CountArray is Array(0 to 7) of std_logic_vector(1 downto 0);
+	signal NibbleCount : CountArray;
+
+	signal ResetHi,TrgTxEn,RxDatEnable,RxDatEnableD : std_logic;
+	
+{Type TxOutRec is record
+		FM,Done : std_logic;
+		end record;}	
+		
+		signal TxOuts : TxOutRec;
+	
+	constant InitVal : RxOutArray := (X"1234",X"2345",X"3456",X"4567",
+												 X"5678",X"6789",X"789A",X"89AB");
+	constant MDIODat0 : std_logic_vector(15 downto 0) := X"4792";
+	constant MDIODat1 : std_logic_vector(15 downto 0) := X"E31B";
+
+   -- Clock period definitions
+   constant ClkB_P_period : time := 9.4 ns;
+   constant ClkB_N_period : time := 9.4 ns;
+   constant Clk50MHz_period : time := 20 ns;
+   constant Clk25MHz_period : time := 40 ns;
+   constant RxClk_period : time := 39.99 ns;
+   constant TxClk_period : time := 40 ns;
+   constant PhyClk_period : time := 40 ns;
+
+-- Inter-module link FM serializer and deserializer type declarations
+
+	Type TxOutRec is record
+		FM,Done : std_logic;
+		end record;
+
+BEGIN
+
+-- Instantiate the Unit Under Test (UUT)
+   uut: Controller_FPGA2 PORT MAP (
+          VXO_P => VXO_P, VXO_N => VXO_N,
+          ClkB_P => ClkB_P,ClkB_N => ClkB_N,
+          Clk50MHz => Clk50MHz, Clk25MHz => Clk25MHz,
+          CpldRst => CpldRst, CpldCS => CpldCS,
+          uCRd => uCRd, uCWr => uCWr, uCA => uCA,
+          uCD => uCD, GA => GA, SDCKE => SDCKE,
+          LDM => LDM,UDM => UDM, RAS => RAS,
+          CAS => CAS,SDWE => SDWE,
+          SDClk_P => SDClk_P,SDClk_N => SDClk_N,
+          SDD => SDD,UDQS => UDQS,LDQS => LDQS,
+          SDRzq => SDRzq,SDA => SDA,BA => BA,
+          LinkClk_P => LinkClk_P,LinkClk_N => LinkClk_N,
+          LinkFR_P => LinkFR_P,LinkFR_N => LinkFR_N,
+          LinkD_P => LinkD_P,LinkD_N => LinkD_N,
+          RxDA => RxDA,RxDB => RxDB,RxDC => RxDC,RxDD => RxDD,
+          RxDE => RxDE,RxDF => RxDF,RxDG => RxDG,RxDH => RxDH,
+          RxClk => RxClk, RxDV => RxDV, RxErr => RxErr, CRS => CRS,
+          TxDA => TxDA,TxDB => TxDB,TxDC => TxDC,TxDD => TxDD,
+          TxDE => TxDE,TxDF => TxDF,TxDG => TxDG,TxDH => TxDH,
+          TxEn => TxEn,MDC => MDC,MDIO => MDIO,PhyPDn => PhyPDn,
+          PhyRst => PhyRst,TxClk => TxClk,FMRx => FMRx,
+          FMRxEn => FMRxEn,uBunchFM => uBunchFM,TrgFM => TrgFM,
+			 SPICS => SPICS,SPISClk => SPISClk, SPIMOSI => SPIMOSI,
+			 SPIMISO => SPIMISO,Debug => Debug);
+
+-- FM transmitter for requesting event data from the first level FPGAs
+TrigTx : FM_Tx 
+	generic map (Pwidth => 16)
+		 port map(clock => VXO_P, 
+					 reset => ResetHi,
+					 Enable => TrgTxEn,
+					 Data => TrigRxBuff_Out,
+					 Tx_Out => TrigOuts);
+TrgFM <= TrigOuts.FM;
+ResetHi <= not CpldRst;
+TrgTxEn <= TxEn and not TrigOuts.Done;
+
+-- Clock process definitions
+   ClkB_process :process
+   begin
+		VXO_P <= '0';
+		VXO_N <= '1';
+		ClkB_P <= '0';
+		ClkB_N <= '1';
+		wait for ClkB_P_period/2;
+		VXO_P <= '1';
+		VXO_N <= '0';
+		ClkB_P <= '1';
+		ClkB_N <= '0';
+		wait for ClkB_P_period/2;
+   end process;
+ 
+   Clk50MHz_process :process
+   begin
+		Clk50MHz <= '0';
+		wait for Clk50MHz_period/2;
+		Clk50MHz <= '1';
+		wait for Clk50MHz_period/2;
+   end process;
+ 
+   RxClk_process : process
+   begin
+		iRxClk <= (others => '0');
+		wait for RxClk_period/2;
+		iRxClk <=  (others => '1');
+		wait for RxClk_period/2;
+   end process;
+ 
+-- Stimulus process
+   stim_proc: process
+   begin
+		CpldRst <= '0'; RxDatEnable <= '0';
+		GA <= "00";
+      -- hold reset state for 100 ns.
+      wait for 100 ns;	
+		CpldRst <= '1';
+		wait for 250 ns;
+		RxDatEnable <= '1';
+      wait;
+   end process;
+
+	TxClk <= (others => not Clk25MHz);
+
+FMTxProc : process(CpldRst,VXO_P)
+
+	Variable Index : Integer range 0 to 7;
+	
+	begin
+
+		if CpldRst = '0' then
+	 
+	SysClk <= '0'; TrgTxEn <= '0'; Index := 0;
+	TxEn <= '1';
+	
+ elsif rising_edge(VXO_P) then
+
+	if Index < 7 then
+	
+		if TrigOuts.Done = '1' then Index := Index + 1;
+		else Index := Index;
+		end if;		
+		
+		if TrigOuts.Done = '1' and Index = 6 then TxEn <= '0';
+		else TxEn <= TxEn;
+		end if;
+		
+	end if;
+	end if;
+
+end process;
+
+
+uCWrite : process 
+	begin
+
+	uCWr <= '1'; uCRd <= '1'; CpldCS <= '1';
+	uCA <= (Others => 'Z');	uCD <= (others => 'Z');
+
+	wait until CpldRst = '1';
+
+   wait for 6000 ns;	
+
+		  uCA <= X"011";
+ 		  wait for 5 ns;
+		  CpldCS <= '0';
+		  wait for 10 ns;
+		  uCD <= X"8011";
+		  uCWr <= '0';
+		  wait for 30 ns;
+		  uCWr <= '1';
+		  CpldCS <= '1';
+		  wait for 10 ns;
+		  uCA <= (Others => 'Z');
+		  uCD <= (others => 'Z');
+		  wait for 67 ns;
+
+-- Set the read address
+		  uCA <= X"011";
+ 		  wait for 5 ns;
+		  CpldCS <= '0';
+		  wait for 10 ns;
+		  uCD <= X"7236";
+		  uCWr <= '0';
+		  wait for 30 ns;
+		  uCWr <= '1';
+		  CpldCS <= '1';
+		  wait for 10 ns;
+		  uCA <= (Others => 'Z');
+		  uCD <= (others => 'Z');
+
+		  uCA <= X"011";
+ 		  wait for 5 ns;
+		  CpldCS <= '0';
+		  wait for 10 ns;
+		  uCD <= X"B679";
+		  uCWr <= '0';
+		  wait for 30 ns;
+		  uCWr <= '1';
+		  CpldCS <= '1';
+		  wait for 10 ns;
+		  uCA <= (Others => 'Z');
+		  uCD <= (others => 'Z');
+
+		  uCA <= X"011";
+ 		  wait for 5 ns;
+		  CpldCS <= '0';
+		  wait for 10 ns;
+		  uCD <= X"4EDE";
+		  uCWr <= '0';
+		  wait for 30 ns;
+		  uCWr <= '1';
+		  CpldCS <= '1';
+		  wait for 10 ns;
+		  uCA <= (Others => 'Z');
+		  uCD <= (others => 'Z');
+		  wait for 67 ns;
+
+		  uCA <= X"028";
+ 		  wait for 5 ns;
+		  CpldCS <= '0';
+		  wait for 10 ns;
+		  uCD <= X"0001";
+		  uCWr <= '0';
+		  wait for 30 ns;
+		  uCWr <= '1';
+		  CpldCS <= '1';
+		  wait for 10 ns;
+		  uCA <= (Others => 'Z');
+		  uCD <= (others => 'Z');
+		  wait for 67 ns;
+		  wait;
+
+   end process;
+
+MDIO(0) <= MDIO_Shift_Out0(15) when MDIO_BitCount < 16 and MDIO_State = Shift else 'Z';
+MDIO(1) <= MDIO_Shift_Out1(15) when MDIO_BitCount < 16 and MDIO_State = Shift else 'Z';
+
+MDIO_Rd : process(CpldRst,MDC(0))
+
+begin
+	if CpldRst = '0' then
+
+	MDIO_Shift_Out0 <= (others => '0');
+	MDIO_Shift_Out0 <= (others => '0');
+	MDIO_BitCount <= (others => '0');
+	MDIO_Shift_In0 <= X"0"; MDIO_Shift_In1 <= X"0";
+	MDIO_State <= Idle;
+
+ elsif falling_edge(MDC(0)) then
+
+ MDIO_Shift_In0 <= MDIO_Shift_In0(2 downto 0) & MDIO(0);
+ MDIO_Shift_In1 <= MDIO_Shift_In1(2 downto 0) & MDIO(1);
+
+ if MDIO_BitCount = 16 and MDIO_State = Shift then
+	MDIO_Shift_Out0 <= MDIODat0;
+	MDIO_Shift_Out1 <= MDIODat1;
+ elsif MDIO_BitCount < 16 and MDIO_State = Shift then
+	MDIO_Shift_Out0 <= MDIO_Shift_Out0(14 downto 0) & '0';
+	MDIO_Shift_Out1 <= MDIO_Shift_Out1(14 downto 0) & '0';
+ else 
+	MDIO_Shift_Out0 <= MDIO_Shift_Out0;
+	MDIO_Shift_Out1 <= MDIO_Shift_Out1;
+ end if;
+
+-- Idle,Ld_RdBitCount,Ld_WrtBitCount,Wait_Write,Shift,Done
+ Case MDIO_State is
+	When Idle =>
+	 if MDIO_Shift_In0 = "0110" or MDIO_Shift_In0 = "0110"
+	 then MDIO_State <= Ld_RdBitCount;
+	 elsif MDIO_Shift_In0 = "0101" or MDIO_Shift_In0 = "0101" 
+	 then MDIO_State <= Ld_WrtBitCount;
+	  else MDIO_State <= Idle;
+	 end if;
+	When Ld_RdBitCount => MDIO_State <= Shift;
+	When Ld_WrtBitCount => MDIO_State <= Wait_Write;
+	When Wait_Write =>
+		if MDIO_BitCount = 0 then
+		MDIO_State <= Done;
+		else 
+		MDIO_State <= Wait_Write;
+		end if;
+ 	When Shift =>
+		if MDIO_BitCount = 0 then
+		MDIO_State <= Done;
+		else 
+		MDIO_State <= Shift;
+		end if;
+	When Done => MDIO_State <= Idle;
+end case;
+
+if MDIO_State = Ld_RdBitCount or MDIO_State = Ld_WrtBitCount then MDIO_BitCount <= "11001";
+elsif MDIO_State = Shift or MDIO_State = Wait_Write then MDIO_BitCount <= MDIO_BitCount - 1;
+else MDIO_BitCount <= MDIO_BitCount;
+end if;
+
+end if; -- CpldRst;
+
+end process MDIO_Rd;
+
+RxDA <= RxIns(0) after 15 ns; RxDB <= RxIns(0) after 15 ns; RxDC <= RxIns(0) after 15 ns; RxDD <= RxIns(0) after 15 ns;
+RxDE <= RxIns(0) after 15 ns; RxDF <= RxIns(0) after 15 ns; RxDG <= RxIns(0) after 15 ns; RxDH <= RxIns(0) after 15 ns;
+
+PhyRxGen : for i in 0 to 7 generate
+
+RxClk(i) <=  iRxClk(i) when RxDatEnable = '1' else '0';
+RxDV(i) <= iRxDV(i) after 15 ns; 
+CRS(i) <= iCRS(i) after 15 ns;
+
+PhyRxProc: process(CpldRst,iRxClk)
+
+begin
+
+	if CpldRst = '0' then
+
+	NibbleCount(i) <= "00";  RxOuts(i) <= InitVal(i);
+	RxIns(i) <= X"0"; RxErr(i) <= '1'; iRxDV(i) <= '0';
+	iCRS(i) <= '0'; 
+
+   elsif rising_edge(iRxClk(i)) then
+
+	if RxDatEnable = '1' then
+
+	if CRS(i) = '1' then NibbleCount(i) <= NibbleCount(i) + '1';
+	else NibbleCount(i) <= "00";
+	end if;
+
+	RxErr(i) <= '0';
+
+	if RxErr(i) = '0' then iCRS(i) <= '1'; else iCRS(i) <= '0'; end if;
+	
+	if iCRS(i) = '1' then iRxDV(i) <= '1'; else iRxDV(i) <= '0'; end if;
+	
+	 if NibbleCount(i) = 3 then 
+		RxOuts(i) <= RxOuts(i) + X"1111";
+	 else RxOuts(i) <= RxOuts(i);
+	 end if;
+
+  Case NibbleCount(i) is
+	 when "00" => RxIns(i) <= RxOuts(i)(3 downto 0);
+	 when "01" => RxIns(i) <= RxOuts(i)(7 downto 4);
+	 when "10" => RxIns(i) <= RxOuts(i)(11 downto 8);
+	 when "11" => RxIns(i) <= RxOuts(i)(15 downto 12);
+	 when others => RxIns(i) <= RxOuts(i)(3 downto 0);
+  end case;
+ end if; -- RxDatEnable
+end if; -- CpldRst
+
+end process PhyRxProc;
+
+end generate;	
+
+END;

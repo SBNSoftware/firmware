@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=C:\Experiments\mu2e\Readout_Controller\Controller_FPGA2\impact.xsl
+OUTFILE=C:\Experiments\mu2e\Readout_Controller\Controller_FPGA2\impact.xsl
+FAMILY=Multiple
+PART=Multiple
+WORKINGDIR=C:\Experiments\mu2e\Readout_Controller\Controller_FPGA2
+LICENSE=iMPACT
+USER_INFO=iMPACT

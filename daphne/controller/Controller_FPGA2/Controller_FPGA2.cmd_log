@@ -1,0 +1,1005 @@
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+pin2ucf -o Controller_FPGA2_locked.ucf Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
+xst -intstyle ise -ifn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.xst" -ofn "C:/Experiments/mu2e/Readout_Controller/Controller_FPGA2/Controller_FPGA2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Controller_Fpga2.ucf -p xc6slx25-fgg484-3 Controller_FPGA2.ngc Controller_FPGA2.ngd  
+map -intstyle ise -p xc6slx25-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Controller_FPGA2_map.ncd Controller_FPGA2.ngd Controller_FPGA2.pcf 
+par -w -intstyle ise -ol high -mt off Controller_FPGA2_map.ncd Controller_FPGA2.ncd Controller_FPGA2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Controller_FPGA2.twx Controller_FPGA2.ncd -o Controller_FPGA2.twr Controller_FPGA2.pcf -ucf Controller_Fpga2.ucf 
+bitgen -intstyle ise -f Controller_FPGA2.ut Controller_FPGA2.ncd 
