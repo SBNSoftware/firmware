@@ -1,4 +1,7 @@
 
 SBN Firmware Repository
 
-2021.09.27 Ported DAPHNE firmware from personal github repos and google
+To clone a copy of this repo without going through mrb:
+
+  git clone git@github.com:SBNSoftware/firmware.git
+
